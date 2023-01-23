@@ -33,6 +33,11 @@ class Teacher extends CI_Controller{
 	public function General(){
 		$this->load->view('common/dashboard/teacher/general.php');
 	}
+	public function addUser(){
+		$this->load->view('common/dashboard/teacher/header.php');
+		$this->load->view('common/dashboard/teacher/adduser.php');
+		$this->load->view('layout/footer.php');
+	}
 	// for modal call method
 	public function create_folder(){
 		$html = $this->load->view('common/dashboard/teacher/modals.php',[],true);
